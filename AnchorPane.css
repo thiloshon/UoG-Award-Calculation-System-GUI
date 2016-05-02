@@ -1,0 +1,129 @@
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 10;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab .tab-label {
+
+    -fx-font-family:"Segoe UI Light";
+    -fx-text-fill: black;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+}
+.label{
+    -fx-text-fill:  #71cee5;
+   /** --fx-font-size: 21pt;**/
+}
+
+
+/*/Toggle Button/*/
+
+.toggle-button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-style: null; 
+    -fx-background-radius: 0;
+
+    -fx-background-color: #cccccc;
+  
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: black;
+}
+
+.toggle-button:focused {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-border-style: segments(1, 1);
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;   
+}
+
+.toggle-button:hover {
+    -fx-background-color: #d8d8d8;
+    -fx-text-fill: black;
+}
+
+.toggle-button:selected {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.toggle-button:selected:hover {
+    -fx-background-color: #666;
+    -fx-text-fill: white;
+}
+
+.toggle-button:disabled {
+    -fx-opacity: -fx-disabled-opacity;
+}
+
+/*/Check Button/*/
+.check-box {
+    -fx-text-fill: black;
+}
+
+.check-box .box {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: #bababa;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-padding: 1;
+}
+
+.check-box .mark {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    
+    -fx-padding:7px;
+    -fx-shape: "M1,10L3,8L7,12L14,5L16,7L7,16Z"
+}
+
+.check-box:focused .box{
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: black, #bababa;
+    -fx-border-width: 1, 2;
+    -fx-border-style: segments(1, 1), solid;
+    -fx-border-insets: -3, 0;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: black;
+}
+
+.check-box:indeterminate .mark {
+   -fx-background-color: black; 
+   -fx-background-insets: 2.8; 
+   -fx-padding:7px;
+   -fx-shape: null;
+}
+
+.check-box:disabled
+{
+    -fx-opacity: 0.4;
+}
+
+.check-box:disabled .box
+{
+    -fx-background-color: #cdcdcd;
+    -fx-border-color: #aaa;
+
+}
+
+.check-box:armed .box
+{
+    -fx-background-color: white, black;
+    -fx-background-insets: -1, 2;
+    -fx-background-radius: 0, 0;
+}
+
+.check-box:armed .box .mark
+{
+  -fx-background-color: white;
+}
